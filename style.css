@@ -124,3 +124,66 @@ img{
     width: 90px;
   }
 }
+
+@media screen and (min-width: 419px) and (max-width: 1023px) {
+  /* General | Breakpoint 420px ~ 1023px */
+  body {
+    margin: 0;
+  }
+
+  img {
+    height: auto;
+    width: 200px;
+  }
+
+  /* Typography | Breakpoint 420px ~ 1023px */
+  h1 {
+    font-size: 250%;
+  }
+
+  h3 {
+    font-size: 150%;
+    margin: 2px auto 5px auto;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+
+  /* Utilites | Breakpoint 420px ~ 1023px */
+  .container {
+    width: 95%;
+    padding: 2.5%;
+  }
+
+  .row {
+    width: 96%;
+    padding: 25px 2%;
+    margin-top: 50px;
+  }
+
+  .row *:not(hr) {
+    padding: 10px 0;
+  }
+
+  /* Main content | Breakpoint 420px ~ 1023px */
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    width: 100%;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: calc(100% / 3 - 30px);
+    padding: 0 15px;
+  }
+
+  #steps img {
+    width: 80%;
+  }
+
+  #why .row img {
+    width: 140px;
+  }
+}
