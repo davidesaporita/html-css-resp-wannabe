@@ -65,3 +65,62 @@ img{
 .clear {
   clear:both;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 419px) {
+
+  /* General | Breakpoint 0 ~ 419px */
+  body {
+    margin: 0;
+  }
+
+  img {
+    height: auto;
+    width: 150px;
+  }
+
+  /* Typography | Breakpoint 0 ~ 419px */
+  h1 {
+    font-size: 300%;
+  }
+
+  h3 {
+    font-size: 180%;
+    margin: 2px auto 5px auto;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+
+  /* Utilites | Breakpoint 0 ~ 419px */
+  .container {
+    width: 95%;
+    padding: 2.5%;
+  }
+
+  .row {
+    width: 96%;
+    padding: 25px 2%;
+    margin-top: 50px;
+  }
+
+  .row *:not(hr) {
+    padding: 10px 0;
+  }
+
+  /* Main content | Breakpoint 0 ~ 419px */
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    float: none;
+    width: 100%;
+  }
+
+  #why .row img {
+    width: 90px;
+  }
+}
